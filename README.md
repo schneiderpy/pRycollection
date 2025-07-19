@@ -1,1 +1,1 @@
-A collection of datasets for Paraguay.
+A collection of data sets for Paraguay.
