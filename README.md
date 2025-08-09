@@ -25,9 +25,9 @@ You can install the development version of pRycollection from
 remotes::install_github("schneiderpy/pRycollection")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\Acer\AppData\Local\Temp\RtmpWmZlWk\remotes51cc5f5118f\schneiderpy-pRycollection-4784b70/DESCRIPTION'
+#>       ✔  checking for file 'C:\Users\Acer\AppData\Local\Temp\RtmpURoxys\remotes3698d33c\schneiderpy-pRycollection-4bb8f19/DESCRIPTION'
 #>       ─  preparing 'pRycollection':
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>       ─  checking for LF line-endings in source and make files and shell scripts
 #>   ─  checking for empty or unneeded directories
 #>       ─  building 'pRycollection_0.0.1.tar.gz'
@@ -57,7 +57,8 @@ data(package = "pRycollection")
 This will open a new tab in your source pane listing all available
 datasets.
 
-## Examples
+<img src="man/figures/Pane_pRycollection_datasets.png" width="100%" style="display: block; margin: auto;" />
+\## Examples
 
 This is a basic example which shows you how to use pRycollection. Let’s
 use the `py_temperature` dataset.

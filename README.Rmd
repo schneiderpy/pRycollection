@@ -60,7 +60,9 @@ data(package = "pRycollection")
 
 This will open a new tab in your source pane listing all available datasets.
 
-
+```{r, echo = FALSE, fig.align='center'}
+knitr::include_graphics("man/figures/Pane_pRycollection_datasets.png", dpi = 300)
+```
 ## Examples
 
 This is a basic example which shows you how to use pRycollection.
