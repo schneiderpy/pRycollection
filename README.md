@@ -21,8 +21,18 @@ You can install the development version of pRycollection from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("schneiderpy/pRycollection")
+# install.packages("remotes")
+remotes::install_github("schneiderpy/pRycollection")
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#>       ✔  checking for file 'C:\Users\Acer\AppData\Local\Temp\RtmpWmZlWk\remotes51cc5f5118f\schneiderpy-pRycollection-4784b70/DESCRIPTION'
+#>       ─  preparing 'pRycollection':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>       ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>       ─  building 'pRycollection_0.0.1.tar.gz'
+#>      
+#> 
 ```
 
 ## About the data
