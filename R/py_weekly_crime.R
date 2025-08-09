@@ -36,7 +36,7 @@
 #'
 #'
 #' @source Public Ministry of Paraguay (MP).
-#' \url{ttps://www.ministeriopublico.gov.py/}
+#' \url{https://www.ministeriopublico.gov.py/}
 #'
 #' @references
 #' Schneider, A. (2024). Street crime during COVID-19: a retrospective
