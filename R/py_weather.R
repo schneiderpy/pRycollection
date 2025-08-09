@@ -1,0 +1,66 @@
+#' @docType data
+#' @encoding UTF-8
+#' @name py_weather
+#'
+#' @title Daily weather data
+#'
+#' @description
+#' The \code{py_weather} data frame has 10945 rows and 28 columns.
+#' The observations are daily weather conditions for the five largest
+#' Paraguayan cities from 2016 to 2021.
+#'
+#'
+#' @format A data frame with 10945 rows and 28 variables:
+#' \describe{
+#'   \item{rowid}{Index}
+#'   \item{country}{Country name.}
+#'   \item{ISO}{Country ISO code.}
+#'   \item{city_name}{Character string of the city name.}
+#'   \item{date}{Date, %Y-%m-%d format}
+#'   \item{tempmax}{Maximum temperature at the location.}
+#'   \item{tempmin}{Minimum temperature at the location.}
+#'   \item{temp}{Temperature at the location. Daily values are average
+#'    values (mean) for the day.}
+#'   \item{feelslikemax}{Maximum feels like temperature at the location.}
+#'   \item{feelslikemin}{Minimum feels like temperature at the location.}
+#'   \item{feelslike}{What the temperature feels like accounting for
+#'    heat index or wind chill. Daily values are average values (mean)
+#'     for the day.}
+#'   \item{dew}{Dew point temperature}
+#'   \item{humidity}{Relative humidity in %}
+#'   \item{precip}{The amount of liquid precipitation that fell or is
+#'    predicted to fall in the period. This includes the liquid-equivalent
+#'    amount of any frozen precipitation such as snow or ice.}
+#'   \item{precipprob}{The likelihood of measurable precipitation ranging from 0% to 100%}
+#'   \item{precipcover}{The proportion of hours where there was non-zero
+#'    precipitation. See [here](https://www.visualcrossing.com/resources/blog/what-is-precipitation-coverage/)}
+#'   \item{windspeed}{The sustained wind speed measured as the average
+#'    wind speed that occurs during the preceding one to two minutes.
+#'    Daily values are the maximum hourly value for the day.}
+#'   \item{winddir}{Direction from which the wind is blowing.}
+#'   \item{sealevelpressure}{The sea level atmospheric or barometric
+#'    pressure in millibars (or hectopascals).}
+#'   \item{cloudcover}{How much of the sky is covered in cloud ranging from 0-100%.}
+#'   \item{visibility}{Distance at which distant objects are visible.}
+#'   \item{solarradiation}{The solar radiation power at the instantaneous
+#'    moment of the observation (or forecast prediction).}
+#'   \item{solarenergy}{indicates the total energy from the sun that
+#'    builds up over an hour or day.}
+#'   \item{uvindex}{A value between 0 and 10 indicating the level of ultra
+#'    violet (UV) exposure for that hour or day. 10 represents high level
+#'    of exposure, and 0 represents no exposure.}
+#'   \item{sunrise}{The formatted time of the sunrise (For example “2022-05-23T05:50:40”).}
+#'   \item{sunset}{The formatted time of the sunset (For example “2022-05-23T20:22:29”).}
+#'   \item{moonphase}{Represents the fractional portion through the current
+#'    moon lunation cycle ranging from 0 (the new moon) to 0.5 (the full moon)
+#'    and back to 1 (the next new moon).}
+#'   \item{conditions}{Textual representation of the weather conditions.}
+#' }
+#'
+#'
+#' @source Visual Crossing.
+#' \url{https://www.visualcrossing.com/}
+#'
+#'
+#' @keywords data, dataset
+"py_weather"

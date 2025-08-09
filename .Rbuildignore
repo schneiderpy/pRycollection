@@ -1,3 +1,9 @@
 ^pRycollection\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^README\.Rmd$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

@@ -1,0 +1,89 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pRycollection
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/schneiderpy/pRycollection/workflows/R-CMD-check/badge.svg)](https://github.com/schneiderpy/pRycollection/actions)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
+<!-- badges: end -->
+
+The main goal of **pRycollection** is to provide datasets about Paraguay for
+research and teaching that are not easily found or accessible. 
+pRycollection is a combination of the 3-letter code for Paraguay - PRY - 
+and the word collection. The 3-letter code was chosen to avoid possible
+confusion with the programming language Python (py).
+
+
+
+## Installation
+
+You can install the development version of pRycollection from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("schneiderpy/pRycollection")
+```
+
+## About the data
+
+The pRycollection data package was build from the beginning with FAIR
+principles in mind. FAIR stands for **F**indable, **A**ccessible,
+**I**nteroperable, and **R**eusable. These principles are critical to
+maximizing the impact and value of data in research and practice.
+
+The data is hosted at [Zenodo](https://doi.org/10.5281/zenodo.16744968)
+
+To see what datasets are included in the package load the pRycollection
+data package and the dataset package (to access meta data). The type the
+following code line:
+
+```{r}
+library(pRycollection)
+library(dataset) #accessing meta data
+data(package = "pRycollection")
+```
+
+This will open a new tab in your source pane listing all available datasets.
+
+
+## Examples
+
+This is a basic example which shows you how to use pRycollection.
+Let's use the `py_temperature` dataset.
+
+The first six rows of the dataset ...
+
+```{r example}
+head(py_temperature)
+```
+
+... the dimensions of the dataset ...
+
+```{r py_temperature}
+dim(py_temperature)
+```
+
+... or a summary of the dataset.
+
+```{r}
+summary(py_temperature)
+```
+You might have noticed that the dataset has additional and more informative
+meta data.
+
+

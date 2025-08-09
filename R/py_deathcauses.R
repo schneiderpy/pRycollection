@@ -1,0 +1,39 @@
+#' @docType data
+#' @encoding UTF-8
+#' @name py_deathcauses
+#'
+#' @title All-cause mortality data
+#'
+#' @description
+#' The \code{py_deathcauses} data frame has 2520 rows and 3 recorded columns.
+#' The observations are counts for 21 disease categories on a national
+#' level for the years 2013 and 2022.
+#'
+#' This data set was used in a published paper analyzing all-cause
+#' mortality during the first total lockdown in the COVID-19 pandemic
+#' era.
+#'
+#'
+#' @format A data frame with 2520 rows and 6 variables:
+#' \describe{
+#'   \item{rowid}{Index}
+#'   \item{country}{Country name}
+#'   \item{ISO}{Country ISO code}
+#'   \item{date}{Date variable in %Y-%m-%d format}
+#'   \item{category}{A character string with a disease}
+#'   \item{counts}{A numeric variable indicating the total counts of a
+#'   given disease in a given time period}
+#' }
+#'
+#'
+#' @source Ministry of Public Health and Welfare (MSPBS).
+#' \url{https://www.mspbs.gov.py/index.php}
+#'
+#' @references
+#' Schneider, A. (2024).The impact of the COVID-19 pandemic on all-cause
+#' mortality in Paraguay: 2020 - 2022,
+#' \emph{Revista científica ciencias de la salud}, 6, 1-7,
+#' \url{https://doi.org/10.53732/rccsalud/2024.e6155}.
+#'
+#' @keywords data, dataset
+"py_deathcauses"

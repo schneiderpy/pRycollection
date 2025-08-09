@@ -1,11 +1,33 @@
 Package: pRycollection
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Diverse Datasets from Paraguay
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Andreas",
+           family = "Schneider",
+           role = c("cre", "dtm"),
+           email = "schneiderconsultingpy@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-5630-1097"))
+    )
+Description: This dataset contains a variety of datasets from different
+  scientific fields, e.g., crime, healthcare, finance, weather, and others.
+  Some datasets include national data, others cover the five largest
+  Paraguayan cities.
+License: MIT + file LICENSE
+URL: https://github.com/schneiderpy/pRycollection/, https://schneiderpy.github.io/pRycollection/
+BugReports: https://github.com/schneiderpy/pRycollection/issues/
+VignetteBuilder:
+    knitr,
+    rmarkdown
 Encoding: UTF-8
+Language: en-US
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports: 
+    tibble,
+    dataset
+Suggests: 
+    knitr,
+    rmarkdown
