@@ -20,7 +20,7 @@ and category}
 }
 \source{
 Public Ministry of Paraguay (MP).
-\url{ttps://www.ministeriopublico.gov.py/}
+\url{https://www.ministeriopublico.gov.py/}
 }
 \usage{
 py_weekly_crime

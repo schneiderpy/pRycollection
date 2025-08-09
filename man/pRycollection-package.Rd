@@ -12,6 +12,7 @@ This dataset contains a variety of datasets from different scientific fields, e.
 Useful links:
 \itemize{
   \item \url{https://github.com/schneiderpy/pRycollection/}
+  \item \url{https://schneiderpy.github.io/pRycollection/}
   \item Report bugs at \url{https://github.com/schneiderpy/pRycollection/issues/}
 }
 

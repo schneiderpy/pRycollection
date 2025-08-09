@@ -14,8 +14,7 @@ A data frame with 1565 rows and 7 variables:
 \item{city}{Character string of the city name}
 \item{week}{Week, \%m/\%d/\%Y format}
 \item{avg_temp}{Average weekly temperature at the location}
-\item{holiday}{Indicator or dummy variable if the respective week
-had a holiday}
+\item{holiday}{Dummy variable if the respective week had a holiday}
 }
 }
 \source{

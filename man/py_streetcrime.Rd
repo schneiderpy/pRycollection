@@ -13,22 +13,22 @@ A data frame with 1248 rows and 11 variables:
 \item{ISO}{Country ISO code}
 \item{branch}{Branch of the Public Ministry}
 \item{area}{Administrative area of the branch}
-\item{date}{Date variable in \%Y-\%m-\%d format}
+\item{year_month}{Date variable in \%Y-\%m-\%d format}
 \item{theft}{Count value corresponding to the respective time period
 and branch.}
 \item{theftagg}{Count value corresponding to the respective time period
 and branch.}
 \item{robbery}{Count value corresponding to the respective time period
 and branch.}
-\item{robberagg}{Count value corresponding to the respective time period
+\item{robberyagg}{Count value corresponding to the respective time period
 and branch.}
-\item{robber_death}{Count value corresponding to the respective time period
+\item{robbery_death}{Count value corresponding to the respective time period
 and branch.}
 }
 }
 \source{
 Public Ministry (MP).
-\url{ttps://www.ministeriopublico.gov.py/}
+\url{https://www.ministeriopublico.gov.py/}
 }
 \usage{
 py_streetcrime
