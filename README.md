@@ -7,7 +7,11 @@
 
 [![R-CMD-check](https://github.com/schneiderpy/pRycollection/workflows/R-CMD-check/badge.svg)](https://github.com/schneiderpy/pRycollection/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
+[![Project Status:
+WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!-- badges: end -->
+
+**Datasets with enriched metadata**
 
 The main goal of **pRycollection** is to provide datasets about Paraguay
 for research and teaching that are not easily found or accessible.
@@ -18,21 +22,11 @@ confusion with the programming language Python (py).
 ## Installation
 
 You can install the development version of pRycollection from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/schneiderpy) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("schneiderpy/pRycollection")
-#> 
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\Acer\AppData\Local\Temp\RtmpURoxys\remotes3698d33c\schneiderpy-pRycollection-4bb8f19/DESCRIPTION'
-#>       ─  preparing 'pRycollection':
-#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>       ─  building 'pRycollection_0.0.1.tar.gz'
-#>      
-#> 
+pak::pak("schneiderpy/pRycollection")
 ```
 
 ## About the data
@@ -57,8 +51,13 @@ data(package = "pRycollection")
 This will open a new tab in your source pane listing all available
 datasets.
 
-<img src="man/figures/Pane_pRycollection_datasets.png" width="100%" style="display: block; margin: auto;" />
-\## Examples
+<figure>
+<img src="man/figures/Pane_pRycollection_datasets.png"
+alt="Available datasets" />
+<figcaption aria-hidden="true">Available datasets</figcaption>
+</figure>
+
+## Examples
 
 This is a basic example which shows you how to use pRycollection. Let’s
 use the `py_temperature` dataset.
@@ -116,3 +115,32 @@ summary(py_temperature)
 
 You might have noticed that the dataset has additional and more
 informative meta data.
+
+## Citation
+
+To cite the pRycollection package or datasets, please use:
+
+``` r
+citation("pRycollection")
+#> To cite package 'pRycollection' in publications use:
+#> 
+#>   Schneider A (????). _pRycollection: Diverse Datasets from Paraguay_.
+#>   R package version 0.0.1,
+#>   <https://github.com/schneiderpy/pRycollection/>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {pRycollection: Diverse Datasets from Paraguay},
+#>     author = {Andreas Schneider},
+#>     note = {R package version 0.0.1},
+#>     url = {https://github.com/schneiderpy/pRycollection/},
+#>   }
+```
+
+## References
+
+**Original data published in:**
+
+- Schneider, A. (2025). pRydata: Diverse datasets from Paraguay. Zenodo,
+  <https://doi.org/10.5281/zenodo.16744968>

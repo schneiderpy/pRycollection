@@ -7,12 +7,16 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "75%",
+  warning = FALSE,
+  message = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
 )
+library(tidyverse)
+library(pRycollection)
 ```
 
 # pRycollection
@@ -20,7 +24,10 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/schneiderpy/pRycollection/workflows/R-CMD-check/badge.svg)](https://github.com/schneiderpy/pRycollection/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
+[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!-- badges: end -->
+
+**Datasets with enriched metadata**
 
 The main goal of **pRycollection** is to provide datasets about Paraguay for
 research and teaching that are not easily found or accessible. 
@@ -32,11 +39,11 @@ confusion with the programming language Python (py).
 
 ## Installation
 
-You can install the development version of pRycollection from [GitHub](https://github.com/) with:
+You can install the development version of pRycollection from [GitHub](https://github.com/schneiderpy) with:
 
-``` {r}
+``` r
 # install.packages("remotes")
-remotes::install_github("schneiderpy/pRycollection")
+pak::pak("schneiderpy/pRycollection")
 ```
 
 ## About the data
@@ -52,7 +59,7 @@ To see what datasets are included in the package load the pRycollection
 data package and the dataset package (to access meta data). The type the
 following code line:
 
-```{r}
+```{r, warning=FALSE}
 library(pRycollection)
 library(dataset) #accessing meta data
 data(package = "pRycollection")
@@ -60,9 +67,8 @@ data(package = "pRycollection")
 
 This will open a new tab in your source pane listing all available datasets.
 
-```{r, echo = FALSE, fig.align='center'}
-knitr::include_graphics("man/figures/Pane_pRycollection_datasets.png", dpi = 300)
-```
+![Available datasets](man/figures/Pane_pRycollection_datasets.png)
+
 ## Examples
 
 This is a basic example which shows you how to use pRycollection.
@@ -88,4 +94,15 @@ summary(py_temperature)
 You might have noticed that the dataset has additional and more informative
 meta data.
 
+## Citation
 
+To cite the pRycollection package or datasets, please use:
+
+```{r}
+citation("pRycollection")
+```
+## References
+
+**Original data published in:** 
+
++ Schneider, A. (2025). pRydata: Diverse datasets from Paraguay. Zenodo, https://doi.org/10.5281/zenodo.16744968
