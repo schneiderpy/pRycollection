@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 )
 library(tidyverse)
 library(pRycollection)
+library(dataset)
 ```
 
 # pRycollection
@@ -60,8 +61,6 @@ data package and the dataset package (to access meta data). The type the
 following code line:
 
 ```{r, warning=FALSE}
-library(pRycollection)
-library(dataset) #accessing meta data
 data(package = "pRycollection")
 ```
 

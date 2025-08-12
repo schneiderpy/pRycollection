@@ -43,8 +43,6 @@ data package and the dataset package (to access meta data). The type the
 following code line:
 
 ``` r
-library(pRycollection)
-library(dataset) #accessing meta data
 data(package = "pRycollection")
 ```
 
