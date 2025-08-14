@@ -1,0 +1,19 @@
+
+bibentry(
+    bibtype = "Manual",
+    title = "pRycollection: Diverse datasets from Paraguay",
+    author = "Andreas Schneider",
+    year = "2025",
+    url = "https://github.com/schneiderpy/pRycollection/",
+    note = sprintf("R package version %s", meta$Version),
+    header = "To cite pRycollection in publications please use:" 
+  )
+  
+bibentry(
+    bibtype = "Misc",
+    title = "pRydata: Diverse datasets from Paraguay",
+    author = "Andreas Schneider",
+    year = "2025",
+    doi = "10.5281/zenodo.16744968",
+    header = "Please also cite the related data package:"
+  )

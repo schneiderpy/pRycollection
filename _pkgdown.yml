@@ -1,0 +1,59 @@
+url: https://schneiderpy.github.io/pRycollection/
+template:
+  bootstrap: 5
+  bootswatch: zephyr
+  bslib:
+    font_scale: 1.0
+    headings-color: '#cfd1c7'
+    code_font:
+      google: Overpass Mono
+    code_bg: 
+    bg: '#1e0d4f'
+    fg: '#f2ebed'
+    primary: '#d9dbde'
+    secondary: '#BED4E2'
+    link-color: '#b4de8c'
+    navbar-bg: '#1e0d4f'
+    navbar-light-color: '#a2a5a8'
+    navbar-light-hover-color: '#4c8eba'
+navbar:
+  type: light
+  bg: '#cccbca'
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    right:
+    - search
+    - github
+  components:
+    intro:
+      text: Get started
+      href: articles/pRycollection.html
+    articles:
+      text: Articles
+      menu:
+      - text: Use pRycollection
+      - text: More Examples
+        href: articles/examples.html
+      - text: '-------'
+      - text: Download the data directly
+        href: articles/download.html
+reference:
+- title: Datasets
+  desc: Overview of available datasets in `pRycollection`. You can access them by
+    typing `data(<datasetname>)`.
+  contents:
+  - py_creditcoops
+  - py_deathcauses
+  - py_streetcrime
+  - py_temperature
+  - py_weather
+  - py_weekly_crime
+toc:
+  number_sections: yes
+  depth: 2
+author: Andreas Schneider
+

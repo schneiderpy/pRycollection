@@ -1,0 +1,93 @@
+---
+title: "Get started with pRycollection"
+author: "Andreas Schneider"
+description: >
+  Learn how to use pRycollection
+output:
+  rmarkdown::html_vignette:
+    toc: TRUE
+  
+vignette: >
+  %\VignetteIndexEntry{Get started with pRycollection}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+> Note that this package is a *work in progress*! New data will be added
+as soon as they become available.
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "75%",
+  warning = FALSE,
+  message = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+
+```
+
+```{r setup, include=FALSE, echo=FALSE}
+library(pRycollection)
+library(dataset)
+```
+
+Metadata can provide much more context than they usually do, because
+often data and their respective metadata live in separate places. This
+can make data analysis more difficult.
+
+The main goal of **pRycollection** is to provide datasets about Paraguay
+for research and teaching that are not easily found or accessible.
+The data package was build from the beginning with FAIR
+principles in mind. FAIR stands for **F**indable, **A**ccessible,
+**I**nteroperable, and **R**eusable.
+These principles are critical to maximizing the impact and value of
+data in research and practice.
+
+
+> You can download all dataset directly from `vignette("download")`
+
+
+## Installation
+
+The pRycollection package is easy to install and even more easier to use:
+
+You can install the development version of pRycollection from [GitHub](https://github.com/schneiderpy) with:
+
+```{r, eval=FALSE}
+# install.packages("pak")
+pak::pak("schneiderpy/pRycollection")
+```
+
+## Examples
+
+Choose an available dataset from the package:
+
+```{r, eval=FALSE, warning=FALSE}
+# you will see a new pane tab with the available datasets
+data(package = "pRycollection")
+```
+
+The first six rows of the dataset ...
+
+```{r example}
+head(py_temperature)
+```
+
+You might have noticed that the dataset has additional variable metadata
+labeled with `defined`. Additional metadata was added with the
+[dataset](https://dataset.dataobservatory.eu/) package. The new data frames
+are stored in an R native format to avoid loss of metadata and to keep
+data and metadata together.
+
+For example, if you are interested in the unit of measure for `avg_temp` variable,
+type the following line of code:
+
+```{r}
+dataset::var_unit(py_temperature$avg_temp)
+```
+

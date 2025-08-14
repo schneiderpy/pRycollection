@@ -1,0 +1,70 @@
+---
+title: "Download all pRycollection datasets"
+author: "Andreas Schneider"
+description: >
+  Download pRycollection datasets from repository
+output:
+  rmarkdown::html_vignette:
+    toc: TRUE
+    
+vignette: >
+  %\VignetteIndexEntry{Download all pRycollection datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+You can get all available datasets at once in a .csv format from the
+Zenodo repository.
+Make sure you have the [frictionless](https://github.com/frictionlessdata/frictionless-r)
+r package installed before proceeding.
+
+```{r setup, warning=FALSE, message=FALSE}
+#install.package("frictionless")
+library(frictionless)
+```
+
+
+```{r}
+# Read data from datapackage.json
+
+pRydata <- frictionless::read_package(
+  "https://zenodo.org/records/16744968/files/datapackage.json"
+)
+pRydata
+```
+
+Calling the variable `pRydata` gives you all datasets.
+Select the data you are interested in as follow and print the first six
+rows of the `py_temperature` data.
+
+```{r}
+py_temperature <- read_resource(pRydata, "py_temperature")
+head(py_temperature)
+```
+
+All datasets have additional metadata, but stored in a separate `json` 
+file. If you are interested in the schema type the following two lines
+of code:
+ 
+```{r}
+temp_schema <- pRydata |>
+  get_schema("py_temperature")
+str(temp_schema)
+```
+
+
+> If you use the package or any dataset from this package, please cite
+the package or dataset.
+
+```{r}
+citation("pRycollection")
+```
+
+
