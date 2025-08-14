@@ -28,9 +28,9 @@ Depends:
 LazyData: true
 Imports: 
     tibble,
-    dataset
+    dataset,
+    frictionless
 Suggests: 
     knitr,
     rmarkdown,
-    frictionless,
     ggplot2
