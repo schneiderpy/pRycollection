@@ -27,9 +27,9 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Imports: 
-    tibble,
-    frictionless
+    tibble
 Suggests: 
     knitr,
     rmarkdown,
-    dataset
+    dataset,
+    frictionless
