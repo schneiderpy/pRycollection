@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   download: download.html
   pRycollection: pRycollection.html
-last_built: 2025-08-14T22:25Z
+last_built: 2025-08-14T23:19Z
 urls:
   reference: https://schneiderpy.github.io/pRycollection/reference
   article: https://schneiderpy.github.io/pRycollection/articles
