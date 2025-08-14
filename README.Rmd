@@ -23,9 +23,9 @@ library(dataset)
 # pRycollection
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/schneiderpy/pRycollection/workflows/R-CMD-check/badge.svg)](https://github.com/schneiderpy/pRycollection/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
 [![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![R-CMD-check](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 **Datasets with enriched metadata**
