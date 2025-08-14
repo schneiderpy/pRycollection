@@ -28,12 +28,9 @@ knitr::opts_chunk$set(
   fig.retina = 2,
   fig.align = 'center'
 )
-
-```
-
-```{r setup, include=FALSE, echo=FALSE}
 library(pRycollection)
 library(dataset)
+
 ```
 
 Metadata can provide much more context than they usually do, because
@@ -67,7 +64,7 @@ pak::pak("schneiderpy/pRycollection")
 
 Choose an available dataset from the package:
 
-```{r, eval=FALSE, warning=FALSE}
+```{r}
 # you will see a new pane tab with the available datasets
 data(package = "pRycollection")
 ```
