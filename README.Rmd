@@ -42,7 +42,7 @@ confusion with the programming language Python (py).
 
 You can install the development version of pRycollection from [GitHub](https://github.com/schneiderpy) with:
 
-``` r
+```r
 # install.packages("remotes")
 pak::pak("schneiderpy/pRycollection")
 ```

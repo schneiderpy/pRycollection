@@ -120,19 +120,21 @@ To cite the pRycollection package or datasets, please use:
 
 ``` r
 citation("pRycollection")
-#> To cite package 'pRycollection' in publications use:
+#> To cite the pRycollection package or datasets in publications use:
 #> 
-#>   Schneider A (????). _pRycollection: Diverse Datasets from Paraguay_.
-#>   R package version 0.0.1,
-#>   <https://github.com/schneiderpy/pRycollection/>.
+#>   Schneider A (2025). _pRycollection: Diverse datasets for Paraguay_.
+#>   doi:10.5281/zenodo.16744968 (datasets)
+#>   <https://doi.org/10.5281/zenodo.16744968%20%28datasets%29>,
+#>   <https://schneiderpy.github.io/pRycollection/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {pRycollection: Diverse Datasets from Paraguay},
+#>     title = {pRycollection: Diverse datasets for Paraguay},
 #>     author = {Andreas Schneider},
-#>     note = {R package version 0.0.1},
-#>     url = {https://github.com/schneiderpy/pRycollection/},
+#>     year = {2025},
+#>     doi = {https://doi.org/10.5281/zenodo.16744968 (datasets)},
+#>     url = {https://schneiderpy.github.io/pRycollection/},
 #>   }
 ```
 
