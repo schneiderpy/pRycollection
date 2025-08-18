@@ -6,13 +6,12 @@
 \alias{py_temperature}
 \title{Weekly mean temperatures and holidays}
 \format{
-A data frame with 1565 rows and 7 variables:
+A data frame with 1565 rows and 6 variables:
 \describe{
-\item{rowid}{Index}
 \item{country}{Country name}
 \item{ISO}{Country ISO code}
-\item{city}{Character string of the city name}
-\item{week}{Week, \%m/\%d/\%Y format}
+\item{city}{Factor, city name}
+\item{week}{Week, Y\%-m\%-d\% format}
 \item{avg_temp}{Average weekly temperature at the location}
 \item{holiday}{Dummy variable if the respective week had a holiday}
 }
@@ -25,7 +24,7 @@ Visual Crossing.
 py_temperature
 }
 \description{
-The \code{py_temperature} data frame has 1565 rows and 7 columns.
+The \code{py_temperature} data frame has 1565 rows and 6 columns.
 The observations are weekly average temperature data for the five largest
 Paraguayan cities from 2016 to 2021. The data set also includes an
 indicator variable if the week had a holiday.

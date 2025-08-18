@@ -17,7 +17,7 @@ vignette: >
 > Note that this package is a *work in progress*! New data will be added
 as soon as they become available.
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -29,8 +29,8 @@ knitr::opts_chunk$set(
   fig.align = 'center'
 )
 library(pRycollection)
-library(dataset)
-
+library(frictionless)
+library(tidyverse)
 ```
 
 Metadata can provide much more context than they usually do, because
@@ -51,14 +51,16 @@ data in research and practice.
 
 ## Installation
 
-The pRycollection package is easy to install and even more easier to use:
-
 You can install the development version of pRycollection from [GitHub](https://github.com/schneiderpy) with:
 
-```{r, eval=FALSE}
+```r
 # install.packages("pak")
 pak::pak("schneiderpy/pRycollection")
+
+# load pRycollection
+library(pRycollection)
 ```
+
 
 ## Examples
 
@@ -75,17 +77,16 @@ The first six rows of the dataset ...
 head(py_temperature)
 ```
 
-You might have noticed that the dataset has additional variable metadata
-labeled with `defined`. Additional metadata was added with the
-[dataset](https://dataset.dataobservatory.eu/) package. The new data frames
+You might have noticed that the dataset looks like a normal dataset.
+Additional metadata was added with the
+[frictionless](https://github.com/frictionlessdata/frictionless-r/) R package.
+The new data frames
 are stored in an R native format to avoid loss of metadata and to keep
 data and metadata together.
 
 For example, if you are interested in the unit of measure for `avg_temp` variable,
 type the following line of code:
 
-```{r}
-dataset::var_unit(py_temperature$avg_temp)
-```
+
 
 

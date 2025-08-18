@@ -5,7 +5,7 @@
 #' @title Large Credit Cooperatives of Paraguay
 #'
 #' @description
-#' The \code{py_creditcoops} data frame has 44 rows and 3 recordes columns.
+#' The \code{py_creditcoops} data frame has 44 rows and 3 recorded columns.
 #' The observations are total loans granted from large Paraguayan
 #' credit cooperatives (Type A) paired for the years 2016 and 2018.
 #'
@@ -13,13 +13,12 @@
 #' large credit cooperatives.
 #'
 #'
-#' @format A data frame with 44 rows and 4 variables:
+#' @format A data frame with 44 rows and 5 variables:
 #' \describe{
-#'   \item{rowid}{Index}
 #'   \item{country}{Country name}
 #'   \item{ISO}{Country ISO code}
 #'   \item{coop_id}{Unique identifier of the cooperative}
-#'   \item{year}{An integer indicating the year the loan was granted}
+#'   \item{year}{A factor indicating the year the loan was granted}
 #'   \item{total_loans}{A numeric variable indicating total loans
 #'    granted in US dollars}
 #' }

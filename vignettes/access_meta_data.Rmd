@@ -1,0 +1,78 @@
+---
+title: "Access meta data"
+author: "Andreas Schneider"
+description: >
+  How to access meta data from the dataset
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Access meta data}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "75%",
+  warning = FALSE,
+  message = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+library(tidyverse)
+library(pRycollection)
+library(frictionless)
+```
+
+So far computational results are as expected, as we have seen in
+previous [vignettes](https://schneiderpy.github.io/pRycollection/articles/pRycollection.html).
+
+However, we haven't seen any additional meta data yet. For example, in
+what unit is the `avg_temp` measured?
+
+To do this we need to access the `datapackage.json` file. Since all meta
+data has been added with the `frictionless` package we need some
+functionality of this package. For more details see the
+[documentation](https://github.com/frictionlessdata/frictionless-r) of
+the package.
+
+Make sure you have installed and load the `frictionless` package.
+
+``` r
+# load frictionless
+library(frictionless)
+```
+
+```{r}
+# load data locally
+pRycollection <- frictionless::read_package("../inst/extdata/datapackage.json")
+pRycollection
+```
+
+```{r}
+read_resource(pRycollection, "py_temperature")
+```
+
+Finally, to see the meta data, let's look at the schema of the dataset:
+
+```{r}
+temp_schema <- pRycollection |> get_schema("py_temperature")
+
+# a more general output
+temp_schema
+
+```
+
+Or more specific output for the variable of interest:
+
+```{r}
+temp_schema$fields[[5]]
+```
+
+As you can see, the dataset has an additional *description* and *unit*
+field that makes guessing unnecessary.

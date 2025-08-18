@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -17,15 +17,16 @@ knitr::opts_chunk$set(
 )
 library(tidyverse)
 library(pRycollection)
-library(dataset)
+library(frictionless)
 ```
 
 # pRycollection
 
 <!-- badges: start -->
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
+[![R-CMD-check](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml)
 [![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![R-CMD-check](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16744968.svg)](https://doi.org/10.5281/zenodo.16744968)
+
 <!-- badges: end -->
 
 **Datasets with enriched metadata**
@@ -43,8 +44,11 @@ confusion with the programming language Python (py).
 You can install the development version of pRycollection from [GitHub](https://github.com/schneiderpy) with:
 
 ```r
-# install.packages("remotes")
+# install.packages("pak")
 pak::pak("schneiderpy/pRycollection")
+
+# load pRycollection
+library(pRycollection)
 ```
 
 ## About the data
@@ -54,7 +58,7 @@ principles in mind. FAIR stands for **F**indable, **A**ccessible,
 **I**nteroperable, and **R**eusable. These principles are critical to
 maximizing the impact and value of data in research and practice.
 
-The data is hosted at [Zenodo](https://doi.org/10.5281/zenodo.16744968)
+The data is hosted on [Zenodo](https://doi.org/10.5281/zenodo.16729963)
 
 To see what datasets are included in the package load the pRycollection
 data package and the dataset package (to access meta data). The type the
@@ -64,7 +68,8 @@ following code line:
 data(package = "pRycollection")
 ```
 
-This will open a new tab in your source pane listing all available datasets.
+This will open a new tab in your source pane listing all available
+datasets.
 
 ![Available datasets](man/figures/Pane_pRycollection_datasets.png)
 
@@ -90,8 +95,6 @@ dim(py_temperature)
 ```{r}
 summary(py_temperature)
 ```
-You might have noticed that the dataset has additional and more informative
-meta data.
 
 ## Citation
 
@@ -100,8 +103,6 @@ To cite the pRycollection package or datasets, please use:
 ```{r}
 citation("pRycollection")
 ```
-## References
 
-**Original data published in:** 
 
-+ Schneider, A. (2025). pRydata: Diverse datasets from Paraguay. Zenodo, https://doi.org/10.5281/zenodo.16744968
+

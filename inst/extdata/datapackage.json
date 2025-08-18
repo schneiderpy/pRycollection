@@ -1,0 +1,424 @@
+{
+  "resources": [
+    {
+      "name": "py_creditcoops",
+      "path": "py_creditcoops.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY Credit cooperatives",
+      "description": "A data set of paired credit cooperatives (2016, 2018).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "Country ISO code"
+          },
+          {
+            "name": "coop_id",
+            "type": "number",
+            "description": "Unique identifier of cooperative."
+          },
+          {
+            "name": "year",
+            "type": "string",
+            "constraints": {
+              "enum": ["2016", "2018"]
+            },
+            "description": "String variable of the year."
+          },
+          {
+            "name": "total_loans",
+            "type": "number",
+            "description": "Total of granted loans in a given year.",
+            "unit": "US-dollars."
+          }
+        ]
+      }
+    },
+    {
+      "name": "py_deathcauses",
+      "path": "py_deathcauses.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY All-cause mortality dataset",
+      "description": "Monthly all-cause mortality data for Paraguay (2013 - 2022).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "Country ISO code"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Date"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "Character string of the disease category"
+          },
+          {
+            "name": "counts",
+            "type": "number",
+            "description": "Disease counts per month"
+          }
+        ]
+      }
+    },
+    {
+      "name": "py_weather",
+      "path": "py_weather.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY Weather dataset",
+      "description": "Daily weather data for the five largest cities (2016 - 2021).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "String of the Country name"
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "ISO code"
+          },
+          {
+            "name": "city_name",
+            "type": "string",
+            "constraints": {
+              "enum": ["Asuncion", "Capiata", "Ciudad del Este", "Luque", "San Lorenzo"]
+            },
+            "description": "Character string of the City name."
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Date."
+          },
+          {
+            "name": "tempmax",
+            "type": "number",
+            "description": "Maximum temperature at the location.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "tempmin",
+            "type": "number",
+            "description": "Minimum temperature at the location.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "temp",
+            "type": "number",
+            "description": "Daily average temperature at the location.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "feelslikemax",
+            "type": "number",
+            "description": "Maximum feels like temperature at the location.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "feelslikemin",
+            "type": "number",
+            "description": "Minimum feels like temperature at the location.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "feelslike",
+            "type": "number",
+            "description": "Daily average temperature of what the temperature feels like.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "dew",
+            "type": "number",
+            "description": "Dew point temperature.",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "humidity",
+            "type": "number",
+            "description": "Relative humidity.",
+            "unit": "%"
+          },
+          {
+            "name": "precip",
+            "type": "number",
+            "description": "Amount of liquid precipitation."
+          },
+          {
+            "name": "precipprob",
+            "type": "number",
+            "description": "Likelyhood of precipitation.",
+            "unit": "0%-100%"
+          },
+          {
+            "name": "precipcover",
+            "type": "number",
+            "description": "Proportion of hours where there was non-zero precipitation."
+          },
+          {
+            "name": "windspeed",
+            "type": "number",
+            "description": "Maximum hourly wind speed for the day."
+          },
+          {
+            "name": "winddir",
+            "type": "number",
+            "description": "Direction from which the wind is blowing."
+          },
+          {
+            "name": "sealevelpressure",
+            "type": "number",
+            "description": "Sea level atmospheric or barometric pressure.",
+            "unit": "millibars or hectopascals"
+          },
+          {
+            "name": "cloudcover",
+            "type": "number",
+            "description": "How much of the sky is covered in cloud.",
+            "unit": "0-100%"
+          },
+          {
+            "name": "visibility",
+            "type": "number",
+            "description": "Distance at which distant objects are visible."
+          },
+          {
+            "name": "solarradiation",
+            "type": "number",
+            "description": "Solar radiation power.",
+            "unit": "W/m2"
+          },
+          {
+            "name": "solarenergy",
+            "type": "number",
+            "description": "Total energy from the sun that builds up over a day.",
+            "unit": "MJ/m2"
+          },
+          {
+            "name": "uvindex",
+            "type": "number",
+            "description": "Level of ultra violet (UV) exposure.",
+            "unit": "value, 0-10(high)"
+          },
+          {
+            "name": "sunrise",
+            "type": "string",
+            "description": "Time of the sunrise.",
+            "unit": "Time"
+          },
+          {
+            "name": "sunset",
+            "type": "string",
+            "description": "Time of the sunset.",
+            "unit": "Time"
+          },
+          {
+            "name": "moonphase",
+            "type": "number",
+            "description": "Fractional portion through the current moon lunation cycle."
+          },
+          {
+            "name": "conditions",
+            "type": "string",
+            "description": "A text description."
+          }
+        ]
+      }
+    },
+    {
+      "name": "py_weekly_crime",
+      "path": "py_weekly_crime.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY weekly crimes dataset",
+      "description": "Weekly data on different crimes for the five largest cities (2014–2021).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name."
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "Country ISO code."
+          },
+          {
+            "name": "city_name",
+            "type": "string",
+            "constraints": {
+              "enum": ["Asuncion", "Capiata", "Ciudad del Este", "Luque", "San Lorenzo"]
+            },
+            "description": "City name."
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "constraints": {
+              "enum": ["domestic violence", "land transit exposure", "robbery", "robbery aggravated", "theft", "theft aggravated"]
+            },
+            "description": "Crime category."
+          },
+          {
+            "name": "week",
+            "type": "string",
+            "description": "Week.",
+            "format": "%m/%d/%Y."
+          },
+          {
+            "name": "crimes",
+            "type": "number",
+            "description": "Weekly counts of the respective crime."
+          }
+        ]
+      }
+    },
+    {
+      "name": "py_temperature",
+      "path": "py_temperature.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY Temperature dataset",
+      "description": "Weekly temperature data of the five largest cities (2016 - 2021).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "ISO code"
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "constraints": {
+              "enum": ["Asuncion", "Capiata", "Ciudad del Este", "Luque", "San Lorenzo"]
+            },
+            "description": "City name"
+          },
+          {
+            "name": "week",
+            "type": "string",
+            "description": "Date as week"
+          },
+          {
+            "name": "avg_temp",
+            "type": "number",
+            "description": "Average temperature of the week",
+            "unit": "degrees Celsius."
+          },
+          {
+            "name": "holiday",
+            "type": "number",
+            "description": "Dummy variable if the week has a holiday"
+          }
+        ]
+      }
+    },
+    {
+      "name": "py_streetcrime",
+      "path": "py_streetcrime.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "PRY street crime dataset",
+      "description": "Monthly timeseries data on street crime by sector for Asunción, Greater Asunción area, as well as other major cities (2014–2021).",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country name"
+          },
+          {
+            "name": "ISO",
+            "type": "string",
+            "description": "Country ISO code"
+          },
+          {
+            "name": "branch",
+            "type": "string",
+            "constraints": {
+              "enum": ["barrial1", "barrial2", "barrial3", "barrial5", "barrial6", "barrial7", "barrial8", "barrial9", "central", "Ciudad del Este", "Concepcion", "Encarnacion", "sector1"]
+            },
+            "description": "Branch name"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "constraints": {
+              "enum": ["area1", "area2", "regional"]
+            },
+            "description": "Area name"
+          },
+          {
+            "name": "year_month",
+            "type": "date",
+            "description": "Date"
+          },
+          {
+            "name": "theft",
+            "type": "number",
+            "description": "Monthly theft counts",
+            "format": "%Y-%m-%d."
+          },
+          {
+            "name": "theftagg",
+            "type": "number",
+            "description": "Monthly aggravated theft counts"
+          },
+          {
+            "name": "robbery",
+            "type": "number",
+            "description": "Monthly robbery counts"
+          },
+          {
+            "name": "robberyagg",
+            "type": "number",
+            "description": "Monthly aggravated robbery counts"
+          },
+          {
+            "name": "robbery_death",
+            "type": "number",
+            "description": "Monthly robbery with deaths counts"
+          }
+        ]
+      }
+    }
+  ]
+}

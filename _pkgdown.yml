@@ -1,15 +1,15 @@
 url: https://schneiderpy.github.io/pRycollection/
 template:
   bootstrap: 5
-  bootswatch: zephyr
+  bootswatch: yeti
   bslib:
     font_scale: 1.0
     headings-color: '#cfd1c7'
-    code_font:
-      google: Overpass Mono
-    code_bg: 
     bg: '#1e0d4f'
     fg: '#f2ebed'
+    code_font:
+      google: Overpass Mono
+    code_bg: "#d8d7db"
     primary: '#d9dbde'
     secondary: '#BED4E2'
     link-color: '#b4de8c'
@@ -35,9 +35,10 @@ navbar:
     articles:
       text: Articles
       menu:
-      - text: Use pRycollection
       - text: More Examples
         href: articles/examples.html
+      - text: Access meta data
+        href: articles/access_meta_data.html
       - text: '-------'
       - text: Download the data directly
         href: articles/download.html

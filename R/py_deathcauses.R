@@ -14,9 +14,8 @@
 #' era.
 #'
 #'
-#' @format A data frame with 2520 rows and 6 variables:
+#' @format A data frame with 2520 rows and 5 variables:
 #' \describe{
-#'   \item{rowid}{Index}
 #'   \item{country}{Country name}
 #'   \item{ISO}{Country ISO code}
 #'   \item{date}{Date variable in %Y-%m-%d format}

@@ -5,7 +5,7 @@
 #' @title Monthly street crime
 #'
 #' @description
-#' The \code{py_streetcrime} data frame has 1248 rows and 11 columns.
+#' The \code{py_streetcrime} data frame has 1248 rows and 10 columns.
 #' The observations are monthly counts for five typical street crimes such as
 #' theft, aggravated theft, robbery, aggravated robbery, and aggravated
 #' robbery resulting in death time series. The data correspond to
@@ -20,9 +20,8 @@
 #' Paraguay.
 #'
 #'
-#' @format A data frame with 1248 rows and 11 variables:
+#' @format A data frame with 1248 rows and 10 variables:
 #' \describe{
-#'   \item{rowid}{Index}
 #'   \item{country}{Country name}
 #'   \item{ISO}{Country ISO code}
 #'   \item{branch}{Branch of the Public Ministry}
