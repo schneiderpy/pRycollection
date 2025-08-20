@@ -2,9 +2,11 @@ pandoc: 3.1.11
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
+  access_meta_data: access_meta_data.html
   download: download.html
+  More_examples: More_examples.html
   pRycollection: pRycollection.html
-last_built: 2025-08-16T15:38Z
+last_built: 2025-08-20T22:17Z
 urls:
   reference: https://schneiderpy.github.io/pRycollection/reference
   article: https://schneiderpy.github.io/pRycollection/articles

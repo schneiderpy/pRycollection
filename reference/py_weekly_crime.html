@@ -43,8 +43,8 @@ Paraguay."></head><body>
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
-  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><h6 class="dropdown-header" data-toc-skip>Use pRycollection</h6></li>
-    <li><a class="dropdown-item" href="../articles/examples.html">More Examples</a></li>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/examples.html">More Examples</a></li>
+    <li><a class="dropdown-item" href="../articles/access_meta_data.html">Access meta data</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../articles/download.html">Download the data directly</a></li>
   </ul></li>
@@ -88,7 +88,7 @@ Paraguay.</p>
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
     <p>A data frame with 9390 rows and 7 variables:</p><dl><dt>rowid</dt>
-<dd><p>Index</p></dd>
+<dd><p>index</p></dd>
 
 <dt>country</dt>
 <dd><p>Country name as a character string</p></dd>
@@ -96,11 +96,11 @@ Paraguay.</p>
 <dt>ISO</dt>
 <dd><p>Country ISO code</p></dd>
 
-<dt>city_name</dt>
-<dd><p>Character string of the city name</p></dd>
+<dt>city</dt>
+<dd><p>Factor variable of the city name</p></dd>
 
 <dt>category</dt>
-<dd><p>Crime category, character string</p></dd>
+<dd><p>Crime category, factor</p></dd>
 
 <dt>week</dt>
 <dd><p>Reference period. Weekly data, starting on Monday</p></dd>

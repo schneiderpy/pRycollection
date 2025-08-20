@@ -39,8 +39,8 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
-<li><h6 class="dropdown-header" data-toc-skip>Use pRycollection</h6></li>
-    <li><a class="dropdown-item" href="../articles/examples.html">More Examples</a></li>
+<li><a class="dropdown-item" href="../articles/examples.html">More Examples</a></li>
+    <li><a class="dropdown-item" href="../articles/access_meta_data.html">Access meta data</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../articles/download.html">Download the data directly</a></li>
   </ul>
@@ -96,12 +96,13 @@ the impact and value of data in research and practice.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>The pRycollection package is easy to install and even more easier to
-use:</p>
 <p>You can install the development version of pRycollection from <a href="https://github.com/schneiderpy" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"schneiderpy/pRycollection"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"schneiderpy/pRycollection"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># load pRycollection</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/schneiderpy/pRycollection/" class="external-link">pRycollection</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
@@ -110,28 +111,42 @@ use:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># you will see a new pane tab with the available datasets</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"pRycollection"</span><span class="op">)</span></span></code></pre></div>
-<p>The first six rows of the dataset …</p>
+<p>Choose your dataset and print the first six rows…</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16744968</span></span>
-<span><span class="co">#&gt;   rowid     country   ISO       city      week      avg_temp  holiday   </span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> obs:1     Paraguay  PY        Asuncion  1/4/2016  27.8      0        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> obs:2     Paraguay  PY        Asuncion  1/11/2016 30.3      0        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> obs:3     Paraguay  PY        Asuncion  1/18/2016 29.9      0        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> obs:4     Paraguay  PY        Asuncion  1/25/2016 27.3      1        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> obs:5     Paraguay  PY        Asuncion  2/1/2016  26.6      0        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> obs:6     Paraguay  PY        Asuncion  2/8/2016  30.1      0</span></span></code></pre></div>
-<p>You might have noticed that the dataset has additional variable
-metadata labeled with <code>defined</code>. Additional metadata was
-added with the <a href="https://dataset.dataobservatory.eu/" class="external-link">dataset</a>
-package. The new data frames are stored in an R native format to avoid
-loss of metadata and to keep data and metadata together.</p>
+<span><span class="co">#&gt; Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963</span></span>
+<span><span class="co">#&gt;   rowid     country   ISO       city         week       avg_temp  holiday   </span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dttm_dfn&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span> <span style="color: #949494; font-style: italic;">&lt;defined&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> obs:1     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-01-04 27.8      0        </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> obs:2     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-01-11 30.3      0        </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> obs:3     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-01-18 29.9      0        </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> obs:4     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-01-25 27.3      1        </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> obs:5     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-02-01 26.6      0        </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> obs:6     Paraguay  PY        1<span style="color: #949494;"> [Asuncion]</span> 2016-02-08 30.1      0</span></span></code></pre></div>
+<p>You might have noticed that the dataset looks like a normal dataset,
+however, with additional meta data. The additional meta data was added
+with the <a href="https://github.com/dataobservatory-eu/dataset/" class="external-link">dataset</a> R
+package. For example, you observe the author, year, title, and reference
+of the dataset.</p>
+<p>The new data frames are stored in an R native format to avoid loss of
+meta data and to keep data and meta data together.</p>
 <p>For example, if you are interested in the unit of measure for
 <code>avg_temp</code> variable, type the following line of code:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">dataset</span><span class="fu">::</span><span class="fu"><a href="https://dataset.dataobservatory.eu/reference/var_unit.html" class="external-link">var_unit</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">$</span><span class="va">avg_temp</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "degrees Celsius"</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/attributes.html" class="external-link">attributes</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">$</span><span class="va">avg_temp</span><span class="op">)</span></span>
+<span><span class="co">#&gt; $label</span></span>
+<span><span class="co">#&gt; [1] "Mean temperature"</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $class</span></span>
+<span><span class="co">#&gt; [1] "haven_labelled_defined" "haven_labelled"         "vctrs_vctr"            </span></span>
+<span><span class="co">#&gt; [4] "double"                </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $unit</span></span>
+<span><span class="co">#&gt; [1] "degrees Celsius"</span></span>
+<span></span>
+<span><span class="co"># or alternatively</span></span>
+<span><span class="co"># attributes(py_temperature[[6]])</span></span></code></pre></div>
+<p>As you can see the unit of measure is “degrees Celsius”.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
