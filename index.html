@@ -78,7 +78,7 @@
 <div class="section level2">
 <h2 id="about-the-data">About the data<a class="anchor" aria-label="anchor" href="#about-the-data"></a>
 </h2>
-<p>The pRycollection data package was build from the beginning with FAIR principles in mind. FAIR stands for <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable, and <strong>R</strong>eusable. These principles are critical to maximizing the impact and value of data in research and practice.</p>
+<p>The pRycollection data package was build from the beginning with FAIR principles in mind. <strong>FAIR</strong> stands for <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable, and <strong>R</strong>eusable. These principles are critical to maximizing the impact and value of data in research and practice.</p>
 <p>The data is hosted on <a href="https://doi.org/10.5281/zenodo.16729963" class="external-link">Zenodo</a></p>
 <p>To see what datasets are included in the package load the pRycollection data package and the dataset package (to access meta data). The type the following code line:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
@@ -95,36 +95,42 @@ Available datasets
 <p>The first six rows of the dataset …</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 6 × 6</span></span>
-<span><span class="co">#&gt;   country  ISO   city     week      avg_temp holiday</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;    &lt;chr&gt; &lt;fct&gt;    &lt;chr&gt;        &lt;dbl&gt;   &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1 Paraguay PY    Asuncion 1/4/2016      27.8       0</span></span>
-<span><span class="co">#&gt; 2 Paraguay PY    Asuncion 1/11/2016     30.3       0</span></span>
-<span><span class="co">#&gt; 3 Paraguay PY    Asuncion 1/18/2016     29.9       0</span></span>
-<span><span class="co">#&gt; 4 Paraguay PY    Asuncion 1/25/2016     27.3       1</span></span>
-<span><span class="co">#&gt; 5 Paraguay PY    Asuncion 2/1/2016      26.6       0</span></span>
-<span><span class="co">#&gt; 6 Paraguay PY    Asuncion 2/8/2016      30.1       0</span></span></code></pre></div>
+<span><span class="co">#&gt; Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963</span></span>
+<span><span class="co">#&gt;   rowid     country   ISO       city         week       avg_temp  holiday   </span></span>
+<span><span class="co">#&gt;   &lt;defined&gt; &lt;defined&gt; &lt;defined&gt; &lt;defined&gt;    &lt;dttm_dfn&gt; &lt;defined&gt; &lt;defined&gt;</span></span>
+<span><span class="co">#&gt; 1 obs:1     Paraguay  PY        1 [Asuncion] 2016-01-04 27.8      0        </span></span>
+<span><span class="co">#&gt; 2 obs:2     Paraguay  PY        1 [Asuncion] 2016-01-11 30.3      0        </span></span>
+<span><span class="co">#&gt; 3 obs:3     Paraguay  PY        1 [Asuncion] 2016-01-18 29.9      0        </span></span>
+<span><span class="co">#&gt; 4 obs:4     Paraguay  PY        1 [Asuncion] 2016-01-25 27.3      1        </span></span>
+<span><span class="co">#&gt; 5 obs:5     Paraguay  PY        1 [Asuncion] 2016-02-01 26.6      0        </span></span>
+<span><span class="co">#&gt; 6 obs:6     Paraguay  PY        1 [Asuncion] 2016-02-08 30.1      0</span></span></code></pre></div>
 <p>… the dimensions of the dataset …</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] 1565    6</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 1565    7</span></span></code></pre></div>
 <p>… or a summary of the dataset.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span></span>
-<span><span class="co">#&gt;    country              ISO                         city         week          </span></span>
-<span><span class="co">#&gt;  Length:1565        Length:1565        Asuncion       :313   Length:1565       </span></span>
-<span><span class="co">#&gt;  Class :character   Class :character   Capiata        :313   Class :character  </span></span>
-<span><span class="co">#&gt;  Mode  :character   Mode  :character   Ciudad del Este:313   Mode  :character  </span></span>
-<span><span class="co">#&gt;                                        Luque          :313                     </span></span>
-<span><span class="co">#&gt;                                        San Lorenzo    :313                     </span></span>
-<span><span class="co">#&gt;                                                                                </span></span>
-<span><span class="co">#&gt;     avg_temp         holiday      </span></span>
-<span><span class="co">#&gt;  Min.   : 9.329   Min.   :0.0000  </span></span>
-<span><span class="co">#&gt;  1st Qu.:20.043   1st Qu.:0.0000  </span></span>
-<span><span class="co">#&gt;  Median :24.214   Median :0.0000  </span></span>
-<span><span class="co">#&gt;  Mean   :23.280   Mean   :0.1885  </span></span>
-<span><span class="co">#&gt;  3rd Qu.:26.529   3rd Qu.:0.0000  </span></span>
-<span><span class="co">#&gt;  Max.   :32.000   Max.   :1.0000</span></span></code></pre></div>
+<span><span class="co">#&gt; Schneider (2025): Summary of Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Country name</span></span>
+<span><span class="co">#&gt; Country ISO code</span></span>
+<span><span class="co">#&gt; Mean temperature (degrees Celsius)</span></span>
+<span><span class="co">#&gt; Holiday indicator</span></span>
+<span><span class="co">#&gt;     rowid             country              ISO                 city  </span></span>
+<span><span class="co">#&gt;  Length:1565        Length:1565        Length:1565        Min.   :1  </span></span>
+<span><span class="co">#&gt;  Class :character   Class :character   Class :character   1st Qu.:2  </span></span>
+<span><span class="co">#&gt;  Mode  :character   Mode  :character   Mode  :character   Median :3  </span></span>
+<span><span class="co">#&gt;                                                           Mean   :3  </span></span>
+<span><span class="co">#&gt;                                                           3rd Qu.:4  </span></span>
+<span><span class="co">#&gt;                                                           Max.   :5  </span></span>
+<span><span class="co">#&gt;       week               avg_temp         holiday      </span></span>
+<span><span class="co">#&gt;  Min.   :2016-01-04   Min.   : 9.329   Min.   :0.0000  </span></span>
+<span><span class="co">#&gt;  1st Qu.:2017-07-03   1st Qu.:20.043   1st Qu.:0.0000  </span></span>
+<span><span class="co">#&gt;  Median :2018-12-31   Median :24.214   Median :0.0000  </span></span>
+<span><span class="co">#&gt;  Mean   :2018-12-31   Mean   :23.280   Mean   :0.1885  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:2020-06-29   3rd Qu.:26.529   3rd Qu.:0.0000  </span></span>
+<span><span class="co">#&gt;  Max.   :2021-12-27   Max.   :32.000   Max.   :1.0000</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
