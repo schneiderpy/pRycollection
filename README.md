@@ -64,7 +64,7 @@ alt="Available datasets" />
 This is a basic example which shows you how to use pRycollection. Let’s
 use the `py_temperature` dataset.
 
-A summary of the choosen dataset.
+A summary of the chosen dataset.
 
 ``` r
 summary(py_temperature)
