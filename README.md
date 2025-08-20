@@ -36,7 +36,7 @@ library(pRycollection)
 ## About the data
 
 The pRycollection data package was build from the beginning with FAIR
-principles in mind. FAIR stands for **F**indable, **A**ccessible,
+principles in mind. **FAIR** stands for **F**indable, **A**ccessible,
 **I**nteroperable, and **R**eusable. These principles are critical to
 maximizing the impact and value of data in research and practice.
 
@@ -68,42 +68,48 @@ The first six rows of the dataset …
 
 ``` r
 head(py_temperature)
-#> # A tibble: 6 × 6
-#>   country  ISO   city     week      avg_temp holiday
-#>   <chr>    <chr> <fct>    <chr>        <dbl>   <dbl>
-#> 1 Paraguay PY    Asuncion 1/4/2016      27.8       0
-#> 2 Paraguay PY    Asuncion 1/11/2016     30.3       0
-#> 3 Paraguay PY    Asuncion 1/18/2016     29.9       0
-#> 4 Paraguay PY    Asuncion 1/25/2016     27.3       1
-#> 5 Paraguay PY    Asuncion 2/1/2016      26.6       0
-#> 6 Paraguay PY    Asuncion 2/8/2016      30.1       0
+#> Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963
+#>   rowid     country   ISO       city         week       avg_temp  holiday   
+#>   <defined> <defined> <defined> <defined>    <dttm_dfn> <defined> <defined>
+#> 1 obs:1     Paraguay  PY        1 [Asuncion] 2016-01-04 27.8      0        
+#> 2 obs:2     Paraguay  PY        1 [Asuncion] 2016-01-11 30.3      0        
+#> 3 obs:3     Paraguay  PY        1 [Asuncion] 2016-01-18 29.9      0        
+#> 4 obs:4     Paraguay  PY        1 [Asuncion] 2016-01-25 27.3      1        
+#> 5 obs:5     Paraguay  PY        1 [Asuncion] 2016-02-01 26.6      0        
+#> 6 obs:6     Paraguay  PY        1 [Asuncion] 2016-02-08 30.1      0
 ```
 
 … the dimensions of the dataset …
 
 ``` r
 dim(py_temperature)
-#> [1] 1565    6
+#> [1] 1565    7
 ```
 
 … or a summary of the dataset.
 
 ``` r
 summary(py_temperature)
-#>    country              ISO                         city         week          
-#>  Length:1565        Length:1565        Asuncion       :313   Length:1565       
-#>  Class :character   Class :character   Capiata        :313   Class :character  
-#>  Mode  :character   Mode  :character   Ciudad del Este:313   Mode  :character  
-#>                                        Luque          :313                     
-#>                                        San Lorenzo    :313                     
-#>                                                                                
-#>     avg_temp         holiday      
-#>  Min.   : 9.329   Min.   :0.0000  
-#>  1st Qu.:20.043   1st Qu.:0.0000  
-#>  Median :24.214   Median :0.0000  
-#>  Mean   :23.280   Mean   :0.1885  
-#>  3rd Qu.:26.529   3rd Qu.:0.0000  
-#>  Max.   :32.000   Max.   :1.0000
+#> Schneider (2025): Summary of Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963
+#> 
+#> Country name
+#> Country ISO code
+#> Mean temperature (degrees Celsius)
+#> Holiday indicator
+#>     rowid             country              ISO                 city  
+#>  Length:1565        Length:1565        Length:1565        Min.   :1  
+#>  Class :character   Class :character   Class :character   1st Qu.:2  
+#>  Mode  :character   Mode  :character   Mode  :character   Median :3  
+#>                                                           Mean   :3  
+#>                                                           3rd Qu.:4  
+#>                                                           Max.   :5  
+#>       week               avg_temp         holiday      
+#>  Min.   :2016-01-04   Min.   : 9.329   Min.   :0.0000  
+#>  1st Qu.:2017-07-03   1st Qu.:20.043   1st Qu.:0.0000  
+#>  Median :2018-12-31   Median :24.214   Median :0.0000  
+#>  Mean   :2018-12-31   Mean   :23.280   Mean   :0.1885  
+#>  3rd Qu.:2020-06-29   3rd Qu.:26.529   3rd Qu.:0.0000  
+#>  Max.   :2021-12-27   Max.   :32.000   Max.   :1.0000
 ```
 
 ## Citation

@@ -54,7 +54,7 @@ library(pRycollection)
 ## About the data
 
 The pRycollection data package was build from the beginning with FAIR
-principles in mind. FAIR stands for **F**indable, **A**ccessible,
+principles in mind. **FAIR** stands for **F**indable, **A**ccessible,
 **I**nteroperable, and **R**eusable. These principles are critical to
 maximizing the impact and value of data in research and practice.
 
