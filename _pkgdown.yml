@@ -11,7 +11,7 @@ template:
       google: Overpass Mono
     code_bg: "#d8d7db"
     primary: '#d9dbde'
-    secondary: '#28353d'
+    #secondary: '#28353d'
     link-color: '#b4de8c'
     navbar-bg: '#1e0d4f'
     navbar-light-color: '#a2a5a8'
