@@ -43,8 +43,8 @@ maximizing the impact and value of data in research and practice.
 The data is hosted on [Zenodo](https://doi.org/10.5281/zenodo.16729963)
 
 To see what datasets are included in the package load the pRycollection
-data package and the dataset package (to access meta data). The type the
-following code line:
+data package and the `dataset` package (to access meta data). Then type
+the following code line:
 
 ``` r
 data(package = "pRycollection")
