@@ -34,7 +34,7 @@ Here are some more examples of how you can use the pRycollection package
 or any of its dataset.
 We stay with the `py_temperature` dataset, which has `r ncol(py_temperature)`
 variables and `r nrow(py_temperature)` weeks of temperature data for the
-cities of `r unique(as_factor(py_temperature$city))`.
+cities of `r unique(dataset::as_factor(py_temperature$city))`.
 We could make, for example, a facet plot of the average weekly
 temperature for each city in the dataset.
 
