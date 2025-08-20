@@ -24,55 +24,64 @@ knitr::opts_chunk$set(
   fig.retina = 2,
   fig.align = 'center'
 )
-library(tidyverse)
+
+```
+
+```{r, echo=FALSE}
 library(pRycollection)
-library(frictionless)
+library(dataset)
 ```
 
 So far computational results are as expected, as we have seen in
 previous [vignettes](https://schneiderpy.github.io/pRycollection/articles/pRycollection.html).
 
-However, we haven't seen any additional meta data yet. For example, in
-what unit is the `avg_temp` measured?
+However, we have just seen additional meta data on a glance.
+In our `py_temperature` data, what is the unit for the `avg_temp` variable?
 
-To do this we need to access the `datapackage.json` file. Since all meta
-data has been added with the `frictionless` package we need some
-functionality of this package. For more details see the
-[documentation](https://github.com/frictionlessdata/frictionless-r) of
-the package.
+To find this out we need the `dataset` package. Since all meta
+data has been added with this package we need some functionality of this
+package. For more details see the
+[documentation](https://dataset.dataobservatory.eu/reference/index.html)
+of the package.
 
-Make sure you have installed and load the `frictionless` package.
+Make sure you have installed and load the `dataset` package.
 
 ``` r
-# load frictionless
-library(frictionless)
+# load dataset
+library(dataset)
 ```
 
 ```{r}
 # load data locally
-pRycollection <- frictionless::read_package("../inst/extdata/datapackage.json")
-pRycollection
+data("py_temperature")
 ```
+
+The `summary()` function gives a complete overview of the data and meta
+data.
 
 ```{r}
-read_resource(pRycollection, "py_temperature")
+summary(py_temperature)
 ```
 
-Finally, to see the meta data, let's look at the schema of the dataset:
+While this might be a good idea at the beginning, you might be just
+interested in the unit of measure of one variable. Just type the one line
+of code:
 
 ```{r}
-temp_schema <- pRycollection |> get_schema("py_temperature")
-
-# a more general output
-temp_schema
+var_unit(py_temperature$avg_temp)
 
 ```
 
-Or more specific output for the variable of interest:
+To see what the data is about, use the `description()` function:
 
 ```{r}
-temp_schema$fields[[5]]
+description(py_temperature)
 ```
 
-As you can see, the dataset has an additional *description* and *unit*
-field that makes guessing unnecessary.
+And for a more complete description:
+
+```{r}
+print(get_bibentry(py_temperature), "bibtex")
+```
+
+As you can see, the dataset has rich additional meta data along with the actual measured data. Meta data fields are easily accessible which makes guessing unnecessary.

@@ -13,8 +13,9 @@
 #' large credit cooperatives.
 #'
 #'
-#' @format A data frame with 44 rows and 5 variables:
+#' @format A data frame with 44 rows and 6 variables:
 #' \describe{
+#'   \item{rowid}{index}
 #'   \item{country}{Country name}
 #'   \item{ISO}{Country ISO code}
 #'   \item{coop_id}{Unique identifier of the cooperative}

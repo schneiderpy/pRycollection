@@ -28,8 +28,11 @@ Depends:
 LazyData: true
 Imports: 
     tibble,
-    frictionless
+    frictionless,
+    dataset
 Suggests: 
     knitr,
     rmarkdown,
-    ggplot2
+    ggplot2,
+    dplyr,
+    tidyr

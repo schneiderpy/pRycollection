@@ -5,13 +5,13 @@
 #' @title Daily weather data
 #'
 #' @description
-#' The \code{py_weather} data frame has 10945 rows and 27 columns.
+#' The \code{py_weather} data frame has 10945 rows and 28 columns.
 #' The observations are daily weather conditions for the five largest
 #' Paraguayan cities from 2016 to 2021.
 #'
-#'
-#' @format A data frame with 10945 rows and 27 variables:
+#' @format A data frame with 10945 rows and 28 variables:
 #' \describe{
+#'   \item{rowid}{index}
 #'   \item{country}{Country name.}
 #'   \item{ISO}{Country ISO code.}
 #'   \item{city_name}{Character string of the city name.}
@@ -56,10 +56,8 @@
 #'   \item{conditions}{Textual representation of the weather conditions.}
 #' }
 #'
-#'
 #' @source Visual Crossing.
 #' \url{https://www.visualcrossing.com/}
-#'
 #'
 #' @keywords data, dataset
 "py_weather"

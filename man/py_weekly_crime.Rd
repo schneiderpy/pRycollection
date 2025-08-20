@@ -6,11 +6,12 @@
 \alias{py_weekly_crime}
 \title{Weekly crimes of large Paraguayan cities}
 \format{
-A data frame with 9390 rows and 6 variables:
+A data frame with 9390 rows and 7 variables:
 \describe{
+\item{rowid}{index}
 \item{country}{Country name as a character string}
 \item{ISO}{Country ISO code}
-\item{city_name}{Factor variable of the city name}
+\item{city}{Factor variable of the city name}
 \item{category}{Crime category, factor}
 \item{week}{Reference period. Weekly data, starting on Monday}
 \item{crimes}{Count value corresponding to the respective time period
@@ -25,7 +26,7 @@ Public Ministry of Paraguay (MP).
 py_weekly_crime
 }
 \description{
-The \code{py_weekly_crime} data frame has 9390 rows and 6 columns.
+The \code{py_weekly_crime} data frame has 9390 rows and 7 columns.
 The observations are weekly counts for six different crime types such
 as theft, aggravated theft, robbery, aggravated robbery, domestic
 violence, and land transit exposure (accidents).

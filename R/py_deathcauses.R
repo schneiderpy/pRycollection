@@ -13,9 +13,9 @@
 #' mortality during the first total lockdown in the COVID-19 pandemic
 #' era.
 #'
-#'
-#' @format A data frame with 2520 rows and 5 variables:
+#' @format A data frame with 2520 rows and 6 variables:
 #' \describe{
+#'   \item{rowid}{index}
 #'   \item{country}{Country name}
 #'   \item{ISO}{Country ISO code}
 #'   \item{date}{Date variable in %Y-%m-%d format}
@@ -23,7 +23,6 @@
 #'   \item{counts}{A numeric variable indicating the total counts of a
 #'   given disease in a given time period}
 #' }
-#'
 #'
 #' @source Ministry of Public Health and Welfare (MSPBS).
 #' \url{https://www.mspbs.gov.py/index.php}

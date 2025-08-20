@@ -6,8 +6,9 @@
 \alias{py_creditcoops}
 \title{Large Credit Cooperatives of Paraguay}
 \format{
-A data frame with 44 rows and 5 variables:
+A data frame with 44 rows and 6 variables:
 \describe{
+\item{rowid}{index}
 \item{country}{Country name}
 \item{ISO}{Country ISO code}
 \item{coop_id}{Unique identifier of the cooperative}

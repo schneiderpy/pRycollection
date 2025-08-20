@@ -6,8 +6,9 @@
 \alias{py_deathcauses}
 \title{All-cause mortality data}
 \format{
-A data frame with 2520 rows and 5 variables:
+A data frame with 2520 rows and 6 variables:
 \describe{
+\item{rowid}{index}
 \item{country}{Country name}
 \item{ISO}{Country ISO code}
 \item{date}{Date variable in \%Y-\%m-\%d format}

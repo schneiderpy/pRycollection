@@ -30,7 +30,7 @@ knitr::opts_chunk$set(
 )
 library(pRycollection)
 library(frictionless)
-library(tidyverse)
+library(dataset)
 ```
 
 Metadata can provide much more context than they usually do, because
@@ -71,22 +71,31 @@ Choose an available dataset from the package:
 data(package = "pRycollection")
 ```
 
-The first six rows of the dataset ...
+Choose your dataset and print the first six rows...
 
 ```{r example}
 head(py_temperature)
 ```
 
-You might have noticed that the dataset looks like a normal dataset.
-Additional metadata was added with the
-[frictionless](https://github.com/frictionlessdata/frictionless-r/) R package.
-The new data frames
-are stored in an R native format to avoid loss of metadata and to keep
-data and metadata together.
+You might have noticed that the dataset looks like a normal dataset,
+however, with additional meta data. The additional meta data was added
+with the [dataset](https://github.com/dataobservatory-eu/dataset/) R package.
+For example, you observe the author, year, title, and reference of the 
+dataset.
 
-For example, if you are interested in the unit of measure for `avg_temp` variable,
-type the following line of code:
+The new data frames are stored in an R native format to avoid loss of
+meta data and to keep data and meta data together.
 
+For example, if you are interested in the unit of measure for `avg_temp`
+variable, type the following line of code:
 
+```{r}
+attributes(py_temperature$avg_temp)
 
+# or alternatively
+# attributes(py_temperature[[6]])
+
+```
+
+As you can see the unit of measure is "degrees Celsius".
 

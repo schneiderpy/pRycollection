@@ -6,8 +6,9 @@
 \alias{py_weather}
 \title{Daily weather data}
 \format{
-A data frame with 10945 rows and 27 variables:
+A data frame with 10945 rows and 28 variables:
 \describe{
+\item{rowid}{index}
 \item{country}{Country name.}
 \item{ISO}{Country ISO code.}
 \item{city_name}{Character string of the city name.}
@@ -60,7 +61,7 @@ Visual Crossing.
 py_weather
 }
 \description{
-The \code{py_weather} data frame has 10945 rows and 27 columns.
+The \code{py_weather} data frame has 10945 rows and 28 columns.
 The observations are daily weather conditions for the five largest
 Paraguayan cities from 2016 to 2021.
 }
