@@ -78,6 +78,12 @@ datasets.
 This is a basic example which shows you how to use pRycollection.
 Let's use the `py_temperature` dataset.
 
+A summary of the choosen dataset.
+
+```{r}
+summary(py_temperature)
+```
+
 The first six rows of the dataset ...
 
 ```{r example}
@@ -90,11 +96,7 @@ head(py_temperature)
 dim(py_temperature)
 ```
 
-... or a summary of the dataset.
 
-```{r}
-summary(py_temperature)
-```
 
 ## Citation
 

@@ -64,29 +64,7 @@ alt="Available datasets" />
 This is a basic example which shows you how to use pRycollection. Let’s
 use the `py_temperature` dataset.
 
-The first six rows of the dataset …
-
-``` r
-head(py_temperature)
-#> Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963
-#>   rowid     country   ISO       city         week       avg_temp  holiday   
-#>   <defined> <defined> <defined> <defined>    <dttm_dfn> <defined> <defined>
-#> 1 obs:1     Paraguay  PY        1 [Asuncion] 2016-01-04 27.8      0        
-#> 2 obs:2     Paraguay  PY        1 [Asuncion] 2016-01-11 30.3      0        
-#> 3 obs:3     Paraguay  PY        1 [Asuncion] 2016-01-18 29.9      0        
-#> 4 obs:4     Paraguay  PY        1 [Asuncion] 2016-01-25 27.3      1        
-#> 5 obs:5     Paraguay  PY        1 [Asuncion] 2016-02-01 26.6      0        
-#> 6 obs:6     Paraguay  PY        1 [Asuncion] 2016-02-08 30.1      0
-```
-
-… the dimensions of the dataset …
-
-``` r
-dim(py_temperature)
-#> [1] 1565    7
-```
-
-… or a summary of the dataset.
+A summary of the choosen dataset.
 
 ``` r
 summary(py_temperature)
@@ -110,6 +88,28 @@ summary(py_temperature)
 #>  Mean   :2018-12-31   Mean   :23.280   Mean   :0.1885  
 #>  3rd Qu.:2020-06-29   3rd Qu.:26.529   3rd Qu.:0.0000  
 #>  Max.   :2021-12-27   Max.   :32.000   Max.   :1.0000
+```
+
+The first six rows of the dataset …
+
+``` r
+head(py_temperature)
+#> Schneider (2025): Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963
+#>   rowid     country   ISO       city         week       avg_temp  holiday   
+#>   <defined> <defined> <defined> <defined>    <dttm_dfn> <defined> <defined>
+#> 1 obs:1     Paraguay  PY        1 [Asuncion] 2016-01-04 27.8      0        
+#> 2 obs:2     Paraguay  PY        1 [Asuncion] 2016-01-11 30.3      0        
+#> 3 obs:3     Paraguay  PY        1 [Asuncion] 2016-01-18 29.9      0        
+#> 4 obs:4     Paraguay  PY        1 [Asuncion] 2016-01-25 27.3      1        
+#> 5 obs:5     Paraguay  PY        1 [Asuncion] 2016-02-01 26.6      0        
+#> 6 obs:6     Paraguay  PY        1 [Asuncion] 2016-02-08 30.1      0
+```
+
+… the dimensions of the dataset …
+
+``` r
+dim(py_temperature)
+#> [1] 1565    7
 ```
 
 ## Citation
