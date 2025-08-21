@@ -74,8 +74,7 @@ head(domviol)
 
 We can check the length of the new data frame with the `dim()` function
 and compare the result with the length of the `py_temperature` dataset
-which should be the same, otherwise we would have been seen an
-`error` message.
+which should be the same, otherwise we would have seen an `error` message.
 
 ```{r}
 dim(domviol)
