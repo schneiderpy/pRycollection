@@ -45,7 +45,7 @@ plot
 ```{r plot, echo=FALSE, eval=FALSE}
 plot <- py_temperature |> ggplot(aes(x = week, y = avg_temp)) +
   geom_line() +
-  facet_wrap(~ dataset::as_factor(city))
+  facet_wrap(~ labelled::to_factor(city))
 ggsave("../vignettes/fig/temp-plot.png", width = 8)
 ```
 
