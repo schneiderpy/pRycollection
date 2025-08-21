@@ -35,7 +35,7 @@ as soon as they become available.
 
 
 
-[Si desea leer estas instrucciones en español haga clic en este enlace.](.\README_ES.md)
+[Si desea leer estas instrucciones en español haga clic en este enlace.](../pRycollection/README.md)
 
 **Datasets with enriched metadata**
 
