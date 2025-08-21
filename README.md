@@ -12,6 +12,9 @@ WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.o
 
 <!-- badges: end -->
 
+> Note that this package is a *work in progress*! New data will be added
+> as soon as they become available.
+
 **Datasets with enriched metadata**
 
 The main goal of **pRycollection** is to provide datasets about Paraguay
