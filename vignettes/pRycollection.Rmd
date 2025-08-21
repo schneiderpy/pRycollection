@@ -14,9 +14,6 @@ vignette: >
 ---
 
 
-> Note that this package is a *work in progress*! New data will be added
-as soon as they become available.
-
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,

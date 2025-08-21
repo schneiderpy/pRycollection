@@ -5,7 +5,7 @@ description: >
   More pRycollection examples
 output:
   rmarkdown::html_vignette:
-    toc: TRUE
+    toc: FALSE
 vignette: >
   %\VignetteIndexEntry{More pRycollection examples}
   %\VignetteEngine{knitr::rmarkdown}
@@ -50,7 +50,7 @@ ggsave("../vignettes/fig/temp-plot.png", width = 8)
 ```
 
 ```{r, echo=FALSE}
-knitr::include_graphics("../vignettes/fig/temp-plot.png")
+knitr::include_graphics("../man/figures/temp-plot.png")
 ```
 
 Now let's make a somewhat more complex example:
