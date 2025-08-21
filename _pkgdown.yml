@@ -10,6 +10,7 @@ template:
     code_font:
       google: Overpass Mono
     code_bg: "#cfb37c"
+    code_fg: "#0f0d07"
     primary: '#d9dbde'
     #secondary: '#28353d'
     link-color: '#b4de8c'
