@@ -15,8 +15,8 @@ WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.o
 > Note that this package is a *work in progress*! New data will be added
 > as soon as they become available.
 
-[Si desea leer estas instrucciones en español haga clic en este
-enlace.](../pRycollection/README_ES.md)
+Si desea leer estas instrucciones en español haga clic en
+[Español](README_ES.md)
 
 **Datasets with enriched metadata**
 
