@@ -16,7 +16,7 @@ WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.o
 > as soon as they become available.
 
 [Si desea leer estas instrucciones en español haga clic en este
-enlace.](../pRycollection/docs/README_ES.html)
+enlace.](../pRycollection/README_ES.md)
 
 **Datasets with enriched metadata**
 
