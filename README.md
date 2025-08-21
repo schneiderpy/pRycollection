@@ -15,6 +15,8 @@ WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.o
 > Note that this package is a *work in progress*! New data will be added
 > as soon as they become available.
 
+`Si desea leer estas instrucciones en español haga clic en este enlace.("README_ES")`
+
 **Datasets with enriched metadata**
 
 The main goal of **pRycollection** is to provide datasets about Paraguay
@@ -43,7 +45,8 @@ principles in mind. **FAIR** stands for **F**indable, **A**ccessible,
 **I**nteroperable, and **R**eusable. These principles are critical to
 maximizing the impact and value of data in research and practice.
 
-The data is hosted on [Zenodo](https://doi.org/10.5281/zenodo.16729963)
+The raw data is hosted on
+[Zenodo](https://doi.org/10.5281/zenodo.16729963)
 
 To see what datasets are included in the package load the pRycollection
 data package and the `dataset` package (to access meta data). Then type
