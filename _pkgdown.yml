@@ -19,7 +19,7 @@ template:
     navbar-light-hover-color: '#4c8eba'
 navbar:
   type: light
-  bg: '#cccbca'
+  bg: '#1e0d4f'
   structure:
     left:
     - home
