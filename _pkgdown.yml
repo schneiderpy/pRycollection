@@ -9,7 +9,7 @@ template:
     fg: '#f2ebed'
     code_font:
       google: Overpass Mono
-    code_bg: "#d8d7db"
+    code_bg: "#cfb37c"
     primary: '#d9dbde'
     #secondary: '#28353d'
     link-color: '#b4de8c'
