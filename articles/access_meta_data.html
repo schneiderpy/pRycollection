@@ -77,11 +77,11 @@ Schneider</h4>
     
 <p>So far computational results are as expected, as we have seen in
 previous <a href="https://schneiderpy.github.io/pRycollection/articles/pRycollection.html">vignettes</a>.</p>
-<p>However, we have just seen additional meta data on a glance. In our
+<p>However, we have just seen additional metadata on a glance. In our
 <code>py_temperature</code> data, what is the unit for the
 <code>avg_temp</code> variable?</p>
 <p>To find this out we need the <code>dataset</code> package. Since all
-meta data has been added with this package we need some functionality of
+metadata has been added with this package we need some functionality of
 this package. For more details see the <a href="https://dataset.dataobservatory.eu/reference/index.html" class="external-link">documentation</a>
 of the package.</p>
 <p>Make sure you have installed and load the <code>dataset</code>
@@ -93,7 +93,7 @@ package.</p>
 <code class="sourceCode R"><span><span class="co"># load data locally</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"py_temperature"</span><span class="op">)</span></span></code></pre></div>
 <p>The <code><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary()</a></code> function gives a complete overview of the
-data and meta data.</p>
+data and metadata.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Schneider (2025): Summary of Weekly mean temperature data [dataset], https://doi.org/10.5281/zenodo.16729963</span></span>
@@ -139,8 +139,8 @@ function:</p>
 <span><span class="co">#&gt; Language:     en </span></span>
 <span><span class="co">#&gt; Description:  Weekly mean temperature of the five largest cities (2016-2021).</span></span>
 <span><span class="co">#&gt;   Data set also includes a holiday indicator.</span></span></code></pre></div>
-<p>As you can see, the dataset has rich additional meta data along with
-the actual measured data. Meta data fields are easily accessible which
+<p>As you can see, the dataset has rich additional metadata along with
+the actual measured data. Metadata fields are easily accessible which
 makes guessing unnecessary.</p>
   </main>
 </div>
