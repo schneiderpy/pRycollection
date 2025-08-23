@@ -50,7 +50,7 @@ The raw data is hosted on
 [Zenodo](https://doi.org/10.5281/zenodo.16729963)
 
 To see what datasets are included in the package load the pRycollection
-data package and the `dataset` package (to access meta data). Then type
+data package and the `dataset` package (to access metadata). Then type
 the following code line:
 
 ``` r

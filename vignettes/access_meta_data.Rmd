@@ -35,11 +35,11 @@ library(dataset)
 So far computational results are as expected, as we have seen in
 previous [vignettes](https://schneiderpy.github.io/pRycollection/articles/pRycollection.html).
 
-However, we have just seen additional meta data on a glance.
+However, we have just seen additional metadata on a glance.
 In our `py_temperature` data, what is the unit for the `avg_temp` variable?
 
-To find this out we need the `dataset` package. Since all meta
-data has been added with this package we need some functionality of this
+To find this out we need the `dataset` package. Since all metadata has
+been added with this package we need some functionality of this
 package. For more details see the
 [documentation](https://dataset.dataobservatory.eu/reference/index.html)
 of the package.
@@ -56,8 +56,8 @@ library(dataset)
 data("py_temperature")
 ```
 
-The `summary()` function gives a complete overview of the data and meta
-data.
+The `summary()` function gives a complete overview of the data and
+metadata.
 
 ```{r}
 summary(py_temperature)
@@ -84,4 +84,6 @@ And for a more complete description:
 print(get_bibentry(py_temperature), "bibtex")
 ```
 
-As you can see, the dataset has rich additional meta data along with the actual measured data. Meta data fields are easily accessible which makes guessing unnecessary.
+As you can see, the dataset has rich additional metadata along with the
+actual measured data. Metadata fields are easily accessible which makes
+guessing unnecessary.

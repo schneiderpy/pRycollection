@@ -87,4 +87,4 @@ View(domviol)
 ```
 
 a new pane will pop up with the dataset. In this dataset you can also
-see additional meta data which were not avaiable before.
+see additional meta data which were not available before.

@@ -75,13 +75,13 @@ head(py_temperature)
 ```
 
 You might have noticed that the dataset looks like a normal dataset,
-however, with additional meta data. The additional meta data was added
+however, with additional metadata. The additional metadata was added
 with the [dataset](https://github.com/dataobservatory-eu/dataset/) R package.
-For example, you observe the author, year, title, and reference of the 
-dataset.
+For example, you can observe the author, year, title, and reference of
+the dataset.
 
 The new data frames are stored in an R native format to avoid loss of
-meta data and to keep data and meta data together.
+contextual information and to keep data and metadata together.
 
 For example, if you are interested in the unit of measure for `avg_temp`
 variable, type the following line of code:

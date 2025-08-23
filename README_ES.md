@@ -45,8 +45,8 @@ con los principios FAIR. **FAIR** significa **E**ncontrable,
 ingles). Estos principios son fundamentales para maximizar el impacto y
 el valor de los datos en la investigación y la práctica.
 
-Los datos originales están alojados
-en[Zenodo](https://doi.org/10.5281/zenodo.16729963)
+Los datos originales están alojados en
+[Zenodo](https://doi.org/10.5281/zenodo.16729963)
 
 Para ver los conjuntos de datos incluidos en el paquete, cargue el
 paquete de datos `pRycollection` y el paquete `dataset` (para acceder a
