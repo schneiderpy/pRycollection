@@ -20,7 +20,7 @@ library(pRycollection)
 library(frictionless)
 ```
 
-# pRycollection
+# pRycollection <img src='man/figures/logo.png' align="right" style="float:right; height:250px;"/>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml)
@@ -35,7 +35,7 @@ as soon as they become available.
 
 
 
-Si desea leer estas instrucciones en español haga clic en [Español](README_ES.md)
+Si desea leer estas instrucciones en español haga clic en [español, por favor](README_ES.md)
 
 **Datasets with enriched metadata**
 
