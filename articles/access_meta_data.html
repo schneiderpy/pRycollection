@@ -16,6 +16,7 @@
 ">
 <meta property="og:description" content="How to access meta data from the dataset
 ">
+<meta property="og:image" content="https://schneiderpy.github.io/pRycollection/logo.png">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -63,8 +64,7 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-
-      <h1>Access meta data</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Access meta data</h1>
                         <h4 data-toc-skip class="author">Andreas
 Schneider</h4>
             
@@ -132,12 +132,12 @@ function:</p>
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://dataset.dataobservatory.eu/reference/get_bibentry.html" class="external-link">get_bibentry</a></span><span class="op">(</span><span class="va">py_temperature</span><span class="op">)</span>, <span class="st">"bibtex"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Dublin Core Metadata Record</span></span>
 <span><span class="co">#&gt; --------------------------</span></span>
-<span><span class="co">#&gt; Title:        Weekly mean temperature data </span></span>
-<span><span class="co">#&gt; Creator(s):   Andreas Schneider [cre, dtm] </span></span>
-<span><span class="co">#&gt; Publisher:    :unas </span></span>
-<span><span class="co">#&gt; Year:         2025 </span></span>
-<span><span class="co">#&gt; Language:     en </span></span>
-<span><span class="co">#&gt; Description:  Weekly mean temperature of the five largest cities (2016-2021).</span></span>
+<span><span class="co">#&gt; Title:       Weekly mean temperature data</span></span>
+<span><span class="co">#&gt; Creator(s):  Andreas Schneider [cre, dtm]</span></span>
+<span><span class="co">#&gt; Publisher:   :unas</span></span>
+<span><span class="co">#&gt; Year:        2025</span></span>
+<span><span class="co">#&gt; Language:    en</span></span>
+<span><span class="co">#&gt; Description: Weekly mean temperature of the five largest cities (2016-2021).</span></span>
 <span><span class="co">#&gt;   Data set also includes a holiday indicator.</span></span></code></pre></div>
 <p>As you can see, the dataset has rich additional metadata along with
 the actual measured data. Metadata fields are easily accessible which
