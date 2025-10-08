@@ -20,7 +20,7 @@ library(pRycollection)
 library(frictionless)
 ```
 
-# pRycollection <img src='man/figures/logo.png' align="right" style="float:right; height:250px;"/>
+# pRycollection <img src='man/figures/logo.png' align="right" height="150" style="float:right; height:200px;"/>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/schneiderpy/pRycollection/actions/workflows/R-CMD-check.yml)

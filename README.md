@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pRycollection <img src='man/figures/logo.png' align="right" style="float:right; height:250px;"/>
+# pRycollection <img src='man/figures/logo.png' align="right" height="150" style="float:right; height:200px;"/>
 
 <!-- badges: start -->
 
